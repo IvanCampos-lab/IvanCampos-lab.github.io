@@ -8,6 +8,7 @@ body{
   font-weight: 400;
   line-height: normal;
 }
+html { margin-bottom: 90px }
 
 nav{
   background-color: #D08329;
