@@ -7,8 +7,9 @@ body{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-bottom: 100px;
 }
-html { margin-bottom: 90px }
+
 
 nav{
   background-color: #D08329;

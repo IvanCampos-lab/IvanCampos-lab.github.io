@@ -4,11 +4,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 // https://firebase.google.com/docs/web/setup#available-libraries
 import {
   getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  signOut,
-  GoogleAuthProvider,
-  signInWithPopup,
   onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
@@ -18,12 +13,9 @@ import {
   query,
   where, 
   doc, 
-  setDoc, 
-  addDoc,
   getDoc,
   getDocs,
   updateDoc,
-  Timestamp 
 // } from "firebase/firestore";
 } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js'; 
 
@@ -47,7 +39,6 @@ const db = getFirestore(app);
 
 let signInBtn = document.getElementById("signInBtn");
 let signOutBtn = document.getElementById("signOutBtn");
-let btnClicked = false;
 let aluno;
 let docente;
 let changeNameBtn = document.getElementById("changeNameBtn");
