@@ -3,11 +3,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
 import {
     getAuth,
-    createUserWithEmailAndPassword,
-    signInWithEmailAndPassword,
     signOut,
     GoogleAuthProvider,
-    signInWithPopup,
     onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
@@ -16,20 +13,13 @@ import {
     doc,
     setDoc,
     collection,
-    addDoc,
     getDoc,
     updateDoc,
     deleteDoc,
-    serverTimestamp,
-    increment ,
-    getDocFromCache ,
-    collectionGroup,
     query,
-    limit,
     where,
     arrayUnion, 
     arrayRemove,
-    Timestamp,
     getDocs,
   } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 // TODO: Add SDKs for Firebase products that you want to use
@@ -50,10 +40,9 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const auth = getAuth(app)
 const db = getFirestore(app);
-const provider = new GoogleAuthProvider();
+
 let btnClicked = false;
 let email = "";
 let docenteObj;
@@ -447,13 +436,13 @@ onAuthStateChanged(auth, (user) => {
         cardBtnImg.style.width = "2rem";
         cardBtnImg.style.height = "2rem";
         cardBtn.style.borderRadius = "25px";
+        cardBtn.style.height = "2.5";
         cardBtn.append(cardBtnImg);
         cardFtr.append(cardBtn);
         cardFtr.style.border = "none";
         cardFtr.style.backgroundColor = "#D08329";
         cardFtr.style.alignSelf = "center";
         cardBody.append(cardTitle);
-        //cardBody.append(cardText);
         cardBody.style.textAlign = "center";
         el.append(cardBody);
         el.append(cardFtr);

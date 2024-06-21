@@ -1,5 +1,5 @@
-const CACHE_STATIC_NAME = "static-v1";
-const CACHE_DYNAMIC_NAME = "dynamic-v1";
+const CACHE_STATIC_NAME = "static-v2";
+const CACHE_DYNAMIC_NAME = "dynamic-v2";
 
 const OFFLINE_URL = "offline.html";
 
