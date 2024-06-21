@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+nav{
+  background-color: #D08329;
+}
+
+#topMenu{
+  background-color: #D08329;
+}
+#profileBtn{
+  position: relative;
+  left: 18rem;
+}
+#bottomMenu ul li{
+
+  padding : 0 2rem 0 2.2rem;
+  
+  }
+
+
+  
+.modal-header{
+  border-bottom: none !important;
+  background-color: #945000;
+}
+
+.modal-body{
+  border-top: none !important;
+  background-color: #945000;
+}
+
+.modal-footer{
+  background-color: #945000 !important;
+  border-top: none !important;
+}
+
+#email{
+  background-color: #9D611A ;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#phone{
+  background-color: #9D611A ;
+  border-radius: 25px;
+  text-align: center;
+}
+ 
+#userType{
+  background-color: #9D611A ;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#changeNameInput{
+  border-radius: 25px;
+  text-align: center;
+}
+
+button{
+  background-color: #9D611A !important;
+  border: none !important;
+  border-radius: 25px !important;
+}
+#cardContainer{
+  margin-bottom: 10rem;
+}
+
+
+#examContainer{
+  margin-bottom: 10rem;
+}
+
